@@ -69,7 +69,7 @@ end
     song = self.create
     song.name = file[0]
     song
-binding.pry
+# binding.pry
   end
   #
   # def self.destroy_all
