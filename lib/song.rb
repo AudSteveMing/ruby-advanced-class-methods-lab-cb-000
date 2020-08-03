@@ -73,8 +73,9 @@ end
 # binding.pry
   end
   #
-  # def self.destroy_all
-  # end
+  def self.destroy_all
+    @@all = []
+  end
 #
 #
 # end
