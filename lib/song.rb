@@ -54,13 +54,13 @@ end
 
   def self.new_from_filename(song_name)
     file = song_name.split(/( - |\.)/)
-    song_name_split = file[1]
+    song_name_split = file[2]
     artist_name_split = file[0]
     new_song = Song.new
     new_song.name = song_name_split
     new_song.artist_name = artist_name_split
     new_song
-    binding.pry
+    # binding.pry
   end
 
   #
