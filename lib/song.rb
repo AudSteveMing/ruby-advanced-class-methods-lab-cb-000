@@ -64,8 +64,15 @@ end
   end
 
   #
-  # def self.create_from_filename
-  # end
+  def self.create_from_filename(filename)
+    file = song_name.split(/( - |\.)/)
+    song = self.create
+
+    song.name = file[2]
+    # song.save
+    song
+    
+  end
   #
   # def self.destroy_all
   # end
