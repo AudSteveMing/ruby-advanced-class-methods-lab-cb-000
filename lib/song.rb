@@ -67,11 +67,9 @@ end
   def self.create_from_filename(filename)
     file = filename.split(/( - |\.)/)
     song = self.create
-
     song.name = file[0]
-    # song.save
     song
-
+binding.pry
   end
   #
   # def self.destroy_all
