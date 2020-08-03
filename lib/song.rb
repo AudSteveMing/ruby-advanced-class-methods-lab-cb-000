@@ -67,7 +67,8 @@ end
   def self.create_from_filename(filename)
     file = filename.split(/( - |\.)/)
     song = self.create
-    song.name = file[0]
+    song.name = file[2]
+    song.artist_name = file[0]
     song
 # binding.pry
   end
