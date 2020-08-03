@@ -59,6 +59,7 @@ end
     new_song = Song.new
     new_song.name = song_name_split
     new_song.artist_name = artist_name_split
+    new_song
   end
 
   #
