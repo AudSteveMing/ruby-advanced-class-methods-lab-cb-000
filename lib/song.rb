@@ -65,7 +65,7 @@ end
 
   #
   def self.create_from_filename(filename)
-    file = song_name.split(/( - |\.)/)
+    file = filename.split(/( - |\.)/)
     song = self.create
 
     song.name = file[2]
